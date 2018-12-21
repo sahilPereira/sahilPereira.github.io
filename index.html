@@ -122,40 +122,35 @@
           </tr>
         </table>
 
-        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
           <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
             <td width="25%">
               <div class="one">
-                <div class="two" id='unprocessing_image'><img src='images/unprocessing_after.jpg'></div>
-                <img src='images/unprocessing_before.jpg'>
+                <div class="two" id='game_theory_driving'><img src='images/gtdm_1.png'></div>
+                <img src='images/gtdm_2.png'>
               </div>
               <script type="text/javascript">
                 function unprocessing_start() {
-                  document.getElementById('unprocessing_image').style.opacity = "1";
+                  document.getElementById('game_theory_driving').style.opacity = "1";
                 }
 
                 function unprocessing_stop() {
-                  document.getElementById('unprocessing_image').style.opacity = "0";
+                  document.getElementById('game_theory_driving').style.opacity = "0";
                 }
                 unprocessing_stop()
               </script>
             </td>
             <td valign="top" width="75%">
-              <a href="https://arxiv.org/abs/1811.11127">
-                <papertitle>Unprocessing Images for Learned Raw Denoising</papertitle>
+              <a href="https://drive.google.com/open?id=18MnvYGwTQrnff9E9TO1yJJoynhlF-MgR">
+                <papertitle>Driving Model Based on the Stackelberg Game</papertitle>
               </a>
               <br>
-              <a href="http://timothybrooks.com/">Tim Brooks</a>,
-              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall</a>,
-              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
-              <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
-              <a href="http://www.dsharlet.com/">Dillon Sharlet</a>,
-              <strong>Jonathan T. Barron</strong>
-              <br>
+              <strong>Sahil Pereira</strong>
+              <!-- <br>
               <em>arXiv Preprint</em>, 2018
               <br>
-              <a href="http://timothybrooks.com/tech/unprocessing/">project page</a>
+              <a href="http://timothybrooks.com/tech/unprocessing/">project page</a> -->
               <p></p>
               <p>We can learn a better denoising model by processing and unprocessing images the same way a camera does.</p>
             </td>
@@ -164,32 +159,32 @@
 		  <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
             <td width="25%">
               <div class="one">
-                <div class="two" id='motionblur_image'><img src='images/motionblur_after.jpg'></div>
-                <img src='images/motionblur_before.jpg'>
+                <div class="two" id='obstacle_avoidance'></div>
+                <img src='images/obstacle_2.png'>
               </div>
               <script type="text/javascript">
                 function motionblur_start() {
-                  document.getElementById('motionblur_image').style.opacity = "1";
+                  document.getElementById('obstacle_avoidance').style.opacity = "1";
                 }
 
                 function motionblur_stop() {
-                  document.getElementById('motionblur_image').style.opacity = "0";
+                  document.getElementById('obstacle_avoidance').style.opacity = "0";
                 }
                 motionblur_stop()
               </script>
             </td>
             <td valign="top" width="75%">
               <a href="https://arxiv.org/abs/1811.11745">
-                <papertitle>Learning to Synthesize Motion Blur</papertitle>
+                <papertitle>Dynamic Obstacle Perception and Prediction</papertitle>
               </a>
               <br>
-              <a href="http://timothybrooks.com/">Tim Brooks</a>,
-              <strong>Jonathan T. Barron</strong>
-              <br>
+              <strong>Sahil Pereira</strong>, 
+              Ryan De Iaco, Sushrut Bhalla
+              <!-- <br>
               <em>arXiv Preprint</em>, 2018
               <br>
               <a href="http://timothybrooks.com/tech/motion-blur/">project page</a> / 
-              <a href="https://www.youtube.com/watch?v=8T1jjSz-2V8">video</a>
+              <a href="https://www.youtube.com/watch?v=8T1jjSz-2V8">video</a> -->
               <p></p>
               <p>Frame interpolation techniques can be used to train a network to directly synthesize linear motion blur.</p>
             </td>
@@ -198,36 +193,73 @@
 		  <tr onmouseout="loss_stop()" onmouseover="loss_start()" bgcolor="#ffffd0">
             <td width="25%">
               <div class="one">
-                <div class="two" id='loss_image'><img src='images/loss_after.png'></div>
-                <img src='images/loss_before.png'>
+                <div class="two" id='obj_tracking'><img src='images/track_2.png'></div>
+                <img src='images/track_1.png'>
               </div>
               <script type="text/javascript">
                 function loss_start() {
-                  document.getElementById('loss_image').style.opacity = "1";
+                  document.getElementById('obj_tracking').style.opacity = "1";
                 }
 
                 function loss_stop() {
-                  document.getElementById('loss_image').style.opacity = "0";
+                  document.getElementById('obj_tracking').style.opacity = "0";
                 }
                 loss_stop()
               </script>
             </td>
             <td valign="top" width="75%">
               <p>
-                <a href="https://arxiv.org/abs/1701.03077">
-                  <papertitle>A General and Adaptive Robust Loss Function</papertitle>
+                <a href="https://drive.google.com/open?id=1L9-oTA-ZyONgKt-CgCegqLyg5gQnFgda">
+                  <papertitle>Real-time Object Segmentation and Tracking</papertitle>
                 </a>
                 <br>
-                <strong>Jonathan T. Barron</strong>
-                <br>
+                Sushrut Bhalla, 
+                <strong>Sahil Pereira</strong>
+                , Jaspreet Singh Sambee
+                <!-- <br>
                 <em>arXiv Preprint</em>, 2018
+                <br> -->
+                <p></p>
+                <p>A single robust loss function is a superset of many other common robust loss functions,
+                   and allows training to automatically adapt the robustness of its own loss.</p>
+            </td>
+          </tr>
+
+      <tr onmouseout="img_inpaint_stop()" onmouseover="img_inpaint_start()" bgcolor="#ffffd0">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='img_inpaint'><img src='images/img_paint_2.png'></div>
+                <img src='images/img_paint_1.png'>
+              </div>
+              <script type="text/javascript">
+                function img_inpaint_start() {
+                  document.getElementById('img_inpaint').style.opacity = "1";
+                }
+
+                function img_inpaint_stop() {
+                  document.getElementById('img_inpaint').style.opacity = "0";
+                }
+                loss_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <a href="https://drive.google.com/open?id=1cS29_BhwbhU7xmeqJuD7OC1BMy7Hwh6S">
+                  <papertitle>Restoration of Murals</papertitle>
+                </a>
                 <br>
+                Sushrut Bhalla,
+                <strong>Sahil Pereira</strong>
+                <!-- <br>
+                <em>arXiv Preprint</em>, 2018
+                <br> -->
                 <p></p>
                 <p>A single robust loss function is a superset of many other common robust loss functions,
                    and allows training to automatically adapt the robustness of its own loss.</p>
             </td>
           </tr>
         </table>
+
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td>
@@ -276,7 +308,7 @@
               </p>
             </td>
           </tr>
-        </table> -->
+        </table>
         
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
