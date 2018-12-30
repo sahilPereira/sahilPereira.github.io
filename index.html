@@ -1,1 +1,353 @@
-Working on it :)
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <meta name=viewport content="width=800">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+    
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+    
+    a:focus,
+    a:hover {
+      color: #f09228;
+      text-decoration: none;
+    }
+    
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px
+    }
+    
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+    
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 22px;
+    }
+    
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700
+    }
+    
+    name {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+    
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+    
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    
+    span.highlight {
+      background-color: #ffffd0;
+    }
+  </style>
+  <!-- TODO: change to UW logo -->
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+  <title>Sahil Pereira</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="67%" valign="middle">
+              <p align="center">
+                <name>Sahil Pereira</name>
+              </p>
+              <p>I am a graduate student at the University of Waterloo, where I work on machine learning and its applications to autonomous vehicles. I am part of the <a href="https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/">CPAMI</a> Group and the <a href="https://uwaterloo.ca/scholar/mcrowley/lab">ECE Machine Learning Lab</a>, advised by Mark Crowley. 
+                <!-- <a href="https://ai.google/research">Google Research</a>,... -->
+              </p>
+              <p>
+                I did my Bachelors in ECE at the University of Waterloo. Throughout my undergraduate career I have interned at multiple companies including <a href="https://www.autodesk.com/">Autodesk</a>, <a href="https://www.imaginecommunications.com/">Imagine Communications</a>, <a href="https://www.veeva.com/">Veeva Systems</a> and <a href="https://www.citigroup.com/citi/">Citigroup</a>.
+              </p>
+              <p align=center>
+                <!-- <a href="mailto:jonbarron@gmail.com">Email</a> &nbsp/&nbsp -->
+                <a href="data/SahilPereira-CV.pdf">CV</a> &nbsp/&nbsp
+                <!-- <a href="data/JonBarron-bio.txt">Biography</a> &nbsp/&nbsp -->
+                <a href="https://github.com/sahilPereira">GitHub</a> &nbsp/&nbsp
+                <a href="https://ca.linkedin.com/in/sahil-pereira-7a612395"> LinkedIn </a>
+              </p>
+            </td>
+            <td width="1%">
+              <img src="images/profile1_circularFrame_v1_small.png">
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Research</heading>
+              <p>
+                My research is focused on using reinforcement learning to enable learning via imitation in the domain of autonomous vehicles. I have also worked on projects related to image processing, object segmentation/tracking and game theoretic driving models. I am interested in the research and development of machine learning models to solve practical problems. 
+                <!-- <span class="highlight">highlighted</span>. -->
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <heading>Projects</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+          <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()" bgcolor="#ffffd0">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='game_theory_driving'><img src='images/gtdm_1.png'></div>
+                <img src='images/gtdm_2.png'>
+              </div>
+              <script type="text/javascript">
+                function unprocessing_start() {
+                  document.getElementById('game_theory_driving').style.opacity = "1";
+                }
+
+                function unprocessing_stop() {
+                  document.getElementById('game_theory_driving').style.opacity = "0";
+                }
+                unprocessing_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://drive.google.com/open?id=18MnvYGwTQrnff9E9TO1yJJoynhlF-MgR">
+                <papertitle>Driving Model Based on the Stackelberg Game</papertitle>
+              </a>
+              <br>
+              <strong>Sahil Pereira</strong>
+              <!-- <br>
+              <em>arXiv Preprint</em>, 2018
+              <br>
+              <a href="http://timothybrooks.com/tech/unprocessing/">project page</a> -->
+              <p></p>
+              <p>The hierarchical decision making structure of the Stackelberg model is used to model multi-agent driving as it reflects the natural hierarchies present in highway traffic beteween groups of vehicles.</p>
+            </td>
+          </tr>
+
+		  <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='obstacle_avoidance'></div>
+                <img src='images/obstacle_2.png'>
+              </div>
+              <script type="text/javascript">
+                function motionblur_start() {
+                  document.getElementById('obstacle_avoidance').style.opacity = "1";
+                }
+
+                function motionblur_stop() {
+                  document.getElementById('obstacle_avoidance').style.opacity = "0";
+                }
+                motionblur_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://drive.google.com/open?id=1-Fv0-Fo7URq2N9uHLDByJaqnBepqkVZV">
+                <papertitle>Dynamic Obstacle Perception and Prediction</papertitle>
+              </a>
+              <br>Ryan De Iaco, 
+              <strong>Sahil Pereira</strong>, 
+              Sushrut Bhalla
+              <!-- <br>
+              <em>arXiv Preprint</em>, 2018
+              <br>
+              <a href="http://timothybrooks.com/tech/motion-blur/">project page</a> / 
+              <a href="https://www.youtube.com/watch?v=8T1jjSz-2V8">video</a> -->
+              <p></p>
+              <p>We address the problem of planning optimal paths through dynamic traffic by generating small portions of a vehicles future trajectory using data obtained from a video stream.</p>
+            </td>
+          </tr>
+          
+		  <tr onmouseout="loss_stop()" onmouseover="loss_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='obj_tracking'><img src='images/track_2.png'></div>
+                <img src='images/track_1.png'>
+              </div>
+              <script type="text/javascript">
+                function loss_start() {
+                  document.getElementById('obj_tracking').style.opacity = "1";
+                }
+
+                function loss_stop() {
+                  document.getElementById('obj_tracking').style.opacity = "0";
+                }
+                loss_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <a href="https://drive.google.com/open?id=1L9-oTA-ZyONgKt-CgCegqLyg5gQnFgda">
+                  <papertitle>Real-time Object Segmentation and Tracking</papertitle>
+                </a>
+                <br>
+                Sushrut Bhalla, 
+                <strong>Sahil Pereira</strong>
+                , Jaspreet Singh Sambee
+                <!-- <br>
+                <em>arXiv Preprint</em>, 2018
+                <br> -->
+                <p></p>
+                <p>Real-time segmentation and tracking of objects is addressed by modifying sub-components of the Mask R-CNN architecture. In addition, we present techniques for object re-identification after occlusions to improve tracking accuracy.</p>
+            </td>
+          </tr>
+
+      <tr onmouseout="img_inpaint_stop()" onmouseover="img_inpaint_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='img_inpaint'><img src='images/img_paint_2.png'></div>
+                <img src='images/img_paint_1.png'>
+              </div>
+              <script type="text/javascript">
+                function img_inpaint_start() {
+                  document.getElementById('img_inpaint').style.opacity = "1";
+                }
+
+                function img_inpaint_stop() {
+                  document.getElementById('img_inpaint').style.opacity = "0";
+                }
+                loss_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <a href="https://drive.google.com/open?id=1cS29_BhwbhU7xmeqJuD7OC1BMy7Hwh6S">
+                  <papertitle>Restoration of Murals</papertitle>
+                </a>
+                <br>
+                Sushrut Bhalla,
+                <strong>Sahil Pereira</strong>
+                <!-- <br>
+                <em>arXiv Preprint</em>, 2018
+                <br> -->
+                <p></p>
+                <p>We compare well known techniques such as patch matching and image inpainting using dictionary learning to a novel restoration technique using context encoders. The techniques are compared using No-Reference Image Quality Assessment techniques.</p>
+            </td>
+          </tr>
+
+      <tr onmouseout="gym_hwy_stop()" onmouseover="gym_hwy_start()" bgcolor="#ffffd0">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='gym_hwy'><img src='images/gtdm_3.png'></div>
+                <img src='images/gtdm_4.png'>
+              </div>
+              <script type="text/javascript">
+                function gym_hwy_start() {
+                  document.getElementById('gym_hwy').style.opacity = "1";
+                }
+
+                function gym_hwy_stop() {
+                  document.getElementById('gym_hwy').style.opacity = "0";
+                }
+                loss_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <a href="https://github.com/sahilPereira/gym-highway">
+                  <papertitle>gym-highway</papertitle>
+                </a>
+                <br>
+                <strong>Sahil Pereira</strong>
+                <p></p>
+                <p>Build a 2D multilane highway driving simulator compatible with the <a href="https://gym.openai.com/">OpenAI Gym</a> interface</p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Peer Reviews</heading>
+              <p> <papertitle>Reviewed papers for the <a href="https://aiforsocialgood.github.io/2018/index.htm">AI for Social Good</a> workshop at <a href="https://nips.cc/">NeurIPS 2018</a>. </papertitle>
+                <br>
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Teaching Assistantship</heading>
+              <p>
+                <a href="https://uwaterloo.ca/graduate-studies-academic-calendar/graduate-course/subject/ECE#656">
+                  <papertitle>ECE656 (Database Systems) - Winter 2018 (Graduate Course)</papertitle>
+                </a>
+                <br>
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody>
+            <tr>
+              <td>
+              <br>
+              <p align="right">
+                <font size="2">
+                <a href="https://jonbarron.info/">credits
+                </a>
+                 </font>
+              </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <script type="text/javascript">
+          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+          try {
+            var pageTracker = _gat._getTracker("UA-7580334-1");
+            pageTracker._trackPageview();
+          } catch (err) {}
+        </script>
+        </td>
+    </tr>
+  </table>
+</body>
+
+</html>
